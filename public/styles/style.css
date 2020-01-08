@@ -1,0 +1,112 @@
+@font-face {
+    font-family:'Mandalore';
+    font-display: swap;
+    src: url("../assets/fonts/mandalore.ttf") /* TTF file for CSS3 browsers */
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Mandalore', 'sans-serif';
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #e7c1c1;
+}
+
+header{
+    background: linear-gradient(90deg, rgb(245, 98, 132), rgb(248, 105, 80));
+}
+
+.navbar{
+    width: 90%;
+    height: 12vh;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.navbar li{
+    list-style: none;
+    font-size: 1.5em;
+}
+
+.main-container{
+    height: 85vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.side-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex-basis: 50%;
+}/* 
+
+.left{
+}
+
+.right{
+} */
+.app-title{
+    font-size: 4em;
+    margin: 20px 0 40px;
+}
+
+.tomato{
+    content:url(../assets/images/tomato.png);
+    height: 200px;
+    width: auto;
+    margin-bottom: 40px;
+}
+
+.timer-button{
+    width: 250px;
+    height: 60px;
+    font-size: 2em;
+    background-color: #5ab82f;
+    border: none;
+    border-radius: 4px;
+}
+
+.timer-button:hover{
+    background-color: #80c95f;
+}
+
+.timer-button:active{
+    background-color: #3e861d;
+}
+
+.time{
+    margin: 25px 0;
+    font-size: 9em;
+    font-variant-numeric: tabular-nums;
+}
+
+.phase{
+    margin: 10px 0;
+    font-size: 2em;
+}
+
+.activity{
+    font-size: 1.3em;
+}
