@@ -79,12 +79,12 @@ function runningPomodoro() {
         seconds = seconds < 10 ? `0${seconds}` : seconds;
         timeText.textContent = `${minutes}:${seconds}`;
         phaseText.textContent = `${phase}`;
-        if (difference === 0 && phase === 'Rest Time') {
+        if (difference <= 0 && phase === 'Rest Time') {
             clearInterval(timer);
             resetPomodoro();
             playSound();
         }
-        if (difference === 0 && phase === 'Work Time') {
+        if (difference <= 0 && phase === 'Work Time') {
             phase = 'Rest Time';
             duration = parseInt(duration, 10) + 300;
             storeValues();
