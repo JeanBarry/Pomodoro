@@ -79,6 +79,7 @@ function runningPomodoro() {
         seconds = seconds < 10 ? `0${seconds}` : seconds;
         timeText.textContent = `${minutes}:${seconds}`;
         phaseText.textContent = `${phase}`;
+        document.title = `Pomodoro - ${minutes}:${seconds}`;
         if (difference <= 0 && phase === 'Rest Time') {
             clearInterval(timer);
             resetPomodoro();
